@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-white font-sans text-neutral-800;
+  }
+}
+
+@layer components {
+  .section {
+    @apply px-5 py-20 sm:px-8 sm:py-28 lg:py-32;
+  }
+
+  .section-inner {
+    @apply mx-auto max-w-3xl lg:max-w-4xl;
+  }
+
+  .section-wide {
+    @apply mx-auto max-w-5xl;
+  }
+
+  .section-eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.2em] text-neutral-500;
+  }
+
+  .section-heading {
+    @apply text-3xl font-semibold tracking-tight text-neutral-900 sm:text-4xl;
+  }
+
+  .section-subheading {
+    @apply text-lg font-semibold tracking-tight text-neutral-900 sm:text-xl;
+  }
+
+  .body-text {
+    @apply text-base leading-relaxed text-neutral-600 sm:text-[17px] sm:leading-7;
+  }
+
+  .card {
+    @apply rounded-2xl border border-neutral-200/80 bg-white p-6 transition-all duration-300 ease-apple hover:-translate-y-1 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 sm:p-8;
+  }
+
+  .pill {
+    @apply rounded-full bg-neutral-100 px-3.5 py-1 text-xs font-medium text-neutral-700 transition-all duration-200 ease-apple hover:bg-neutral-200;
+  }
+
+  .pill-outline {
+    @apply rounded-full border border-neutral-200 px-4 py-1.5 text-sm text-neutral-700 transition-all duration-200 ease-apple hover:border-neutral-300 hover:bg-neutral-50;
+  }
+
+  .btn-primary {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full bg-neutral-900 px-7 py-3 text-sm font-medium text-white transition-all duration-300 ease-apple hover:scale-[1.04] hover:bg-neutral-800 active:scale-[0.98];
+  }
+
+  .btn-secondary {
+    @apply inline-flex min-h-[44px] items-center justify-center rounded-full border border-neutral-300 bg-white px-7 py-3 text-sm font-medium text-neutral-900 transition-all duration-300 ease-apple hover:scale-[1.04] hover:border-neutral-400 hover:bg-neutral-50 active:scale-[0.98];
+  }
+
+  .nav-link {
+    @apply text-sm text-neutral-500 transition-colors duration-200 ease-apple hover:text-neutral-900;
+  }
+
+  .contact-card {
+    @apply block rounded-2xl border border-neutral-200/80 bg-white p-5 transition-all duration-300 ease-apple hover:-translate-y-1 hover:border-neutral-300 hover:shadow-xl hover:shadow-neutral-900/5 sm:p-6;
+  }
+}
