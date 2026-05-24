@@ -14,7 +14,7 @@ export default function Navbar() {
   const closeMenu = () => setOpen(false)
 
   return (
-    <header className="sticky top-0 z-50 border-b border-neutral-200/60 bg-white/80 backdrop-blur-xl backdrop-saturate-150">
+    <header className="sticky top-0 z-50 bg-white/80 backdrop-blur-xl backdrop-saturate-150">
       <nav className="section-wide flex items-center justify-between px-5 py-4 sm:px-8">
         <a
           href="#"

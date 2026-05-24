@@ -16,16 +16,16 @@ const links = [
   },
   {
     label: 'Portfolio',
-    value: 'zeliglim.github.io',
-    href: 'https://zeliglim.github.io',
+    value: 'zeliglim.github.io/legacyprofile',
+    href: 'https://zeliglim.github.io/legacyprofile/',
   },
   {
-    label: 'GitHub',
+    label: 'University GitHub',
     value: 'limzhilit',
     href: 'https://github.com/limzhilit',
   },
   {
-    label: 'GitHub',
+    label: 'Personal GitHub',
     value: 'ZeligLim',
     href: 'https://github.com/ZeligLim',
   },
