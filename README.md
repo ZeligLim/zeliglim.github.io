@@ -1,16 +1,18 @@
-# React + Vite
+# Zhi Lit Lim — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Personal portfolio built with Next.js 15 App Router, TypeScript, Tailwind CSS 4, Framer Motion, and Payload CMS 3 with the PostgreSQL adapter.
 
-Currently, two official plugins are available:
+## Local development
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+1. Install dependencies with `npm install`.
+2. Copy `.env.example` to `.env.local` and set `DATABASE_URL` to a reachable PostgreSQL database.
+3. Set `PAYLOAD_SECRET` to a long random value (for example, generate one with `openssl rand -base64 32`).
+4. Run `npm run dev` and open `/` for the portfolio or `/admin` for Payload.
 
-## React Compiler
+The public projects page uses a small local data fallback when no database URL is configured. Writing stays empty until posts are published in Payload. CMS content is loaded in server components through Payload's local API; there are no browser-side CMS requests.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+For production, configure both environment variables and create/run Payload migrations as part of the deployment workflow. Do not use the local development secret in a deployed environment.
 
-## Expanding the ESLint configuration
+## Checks
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
